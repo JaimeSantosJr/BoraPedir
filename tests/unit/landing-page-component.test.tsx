@@ -9,7 +9,7 @@ describe('landing page', () => {
     const markup = renderToStaticMarkup(React.createElement(Home))
 
     expect(markup).toContain('Organize a operação do seu restaurante para vender mais, atender melhor e crescer com controle.')
-    expect(markup).toContain('Começar com o ChefOps')
+    expect(markup).toContain('Bora pedir agora')
     expect(markup).toContain('Ver a plataforma')
     expect(markup).toContain('href="/register"')
     expect(markup).toContain('href="/login"')
@@ -22,19 +22,19 @@ describe('landing page', () => {
 
     expect(markup).toContain('Um sistema para restaurante que precisa operar com clareza.')
     expect(markup).toContain('Pedidos, mesas, comandas, cozinha, estoque e cobrança em um fluxo único.')
-    expect(markup).toContain('O que o ChefOps organiza')
+    expect(markup).toContain('O que o Bora Pedir organiza')
     expect(markup).toContain('Pronto para transformar operação em crescimento?')
   })
 
-  it('renderiza a identidade visual oficial do ChefOps na home pública', async () => {
+  it('renderiza a identidade visual oficial do Bora Pedir na home pública', async () => {
     const { default: Home } = await import('@/app/page')
 
     const markup = renderToStaticMarkup(React.createElement(Home))
 
-    expect(markup).toContain('/brand/chefops-logo.svg')
-    expect(markup).toContain('/brand/chefops-mark.svg')
-    expect(markup).toContain('alt="ChefOps"')
-    expect(markup).toContain('alt="Marca ChefOps"')
+    expect(markup).toContain('/brand/bora-pedir-logo.svg')
+    expect(markup).toContain('/brand/bora-pedir-mark.svg')
+    expect(markup).toContain('alt="Bora Pedir"')
+    expect(markup).toContain('alt="Marca Bora Pedir"')
   })
 
   it('usa a nova paleta institucional da landing', async () => {
@@ -55,7 +55,7 @@ describe('landing page', () => {
     expect(markup).toContain('Restaurantes não perdem venda só por falta de demanda.')
     expect(markup).toContain('Serve para operação pequena ou só para casa maior?')
     expect(markup).toContain('Eu preciso trocar toda a operação de uma vez?')
-    expect(markup).toContain('O ChefOps é só atendimento ou também ajuda a gestão?')
+    expect(markup).toContain('O Bora Pedir é só atendimento ou também ajuda a gestão?')
   })
 
   it('usa um selo de contexto claro no card do produto, sem a etiqueta ambigua anterior', async () => {
@@ -72,7 +72,7 @@ describe('landing page', () => {
 
     const markup = renderToStaticMarkup(React.createElement(Home))
 
-    expect(markup).toContain('ChefOps. Operação mais clara para restaurantes que querem crescer.')
+    expect(markup).toContain('Bora Pedir. Operação mais clara para restaurantes que querem crescer.')
     expect(markup).toContain('href="/register"')
     expect(markup).toContain('href="/login"')
     expect(markup).toContain('Política de privacidade')
@@ -108,11 +108,11 @@ describe('landing page', () => {
     const markup = renderToStaticMarkup(React.createElement(Home))
 
     expect(markup).toContain('Contato comercial')
-    expect(markup).toContain('contato@chefops.com.br')
+    expect(markup).toContain('contato@borapedir.com.br')
     expect(markup).toContain('Produto')
     expect(markup).toContain('Empresa')
     expect(markup).toContain('Plataforma para operação de restaurantes')
-    expect(markup).toContain('/brand/chefops-logo-dark.svg')
+    expect(markup).toContain('/brand/bora-pedir-logo-dark.svg')
   })
 
   it('renderiza um fechamento comercial mais forte no bloco final de conversao', async () => {
@@ -133,7 +133,7 @@ describe('landing page', () => {
     expect(markup).toContain('Escolha o melhor próximo passo para sua operação.')
     expect(markup).toContain('Criar conta e explorar a plataforma')
     expect(markup).toContain('Agendar demonstração comercial')
-    expect(markup).toContain('href="mailto:contato@chefops.com.br?subject=Demonstra%C3%A7%C3%A3o%20ChefOps"')
+    expect(markup).toContain('contato@borapedir.com.br?subject=Demonstra%C3%A7%C3%A3o%20Bora%20Pedir')
   })
 
   it('renderiza prova social com resultados percebidos e sinais de confianca operacional', async () => {
@@ -163,7 +163,7 @@ describe('landing page', () => {
     expect(markup).toContain('Mais popular')
     expect(markup).toContain('Recomendado para operação em crescimento')
     expect(markup).toContain('Precisa de ajuda para escolher?')
-    expect(markup).toContain('suporte@chefops.com.br')
+    expect(markup).toContain('suporte@borapedir.com.br')
   })
 
   it('reforca o bloco final sem repetir a mesma mensagem do bloco anterior', async () => {

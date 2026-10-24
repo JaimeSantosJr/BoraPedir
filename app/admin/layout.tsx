@@ -1,7 +1,9 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
+import Image from 'next/image'
 import Link from 'next/link'
-import { ChefHat, LayoutDashboard, Building2, LogOut } from 'lucide-react'
+import { LayoutDashboard, Building2, LogOut } from 'lucide-react'
+import { BRAND_MARK, BRAND_NAME } from '@/lib/brand'
 
 export default async function AdminLayout({
   children,
@@ -26,11 +28,9 @@ export default async function AdminLayout({
       <aside className="fixed left-0 top-0 h-full w-64 bg-slate-900 flex flex-col">
         <div className="p-6 border-b border-slate-800">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
-              <ChefHat className="w-4 h-4 text-white" />
-            </div>
+            <Image src={BRAND_MARK} alt={BRAND_NAME} width={32} height={32} className="rounded-lg" />
             <div>
-              <p className="text-sm font-semibold text-white">ChefOps</p>
+              <p className="text-sm font-semibold text-white">{BRAND_NAME}</p>
               <p className="text-xs text-slate-400">Painel Admin</p>
             </div>
           </div>

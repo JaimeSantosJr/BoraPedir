@@ -1,4 +1,12 @@
-# ChefOps
+# Bora Pedir
+
+Plataforma de pedidos, cozinha, delivery e pagamentos para restaurantes e lanchonetes.
+
+> Baseado no [ChefOps](https://github.com/devflima/chefops) (remote `upstream`). Marca e identidade visual próprias em `lib/brand.ts`.
+
+---
+
+# ChefOps (documentação técnica original)
 
 Plataforma SaaS para operação e gestão de restaurantes, com foco em pedidos, mesas, comandas, cozinha, estoque, integrações e governança operacional em um fluxo único.
 

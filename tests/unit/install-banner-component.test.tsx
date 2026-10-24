@@ -79,7 +79,7 @@ describe('InstallBanner component', () => {
     const { default: InstallBanner } = await import('@/features/pwa/components/InstallBanner')
     const markup = renderToStaticMarkup(React.createElement(InstallBanner))
 
-    expect(markup).toContain('Instalar ChefOps')
+    expect(markup).toContain('Instalar Bora Pedir')
     expect(markup).toContain('Acesse mais rápido pelo celular')
     expect(markup).toContain('Instalar')
   })

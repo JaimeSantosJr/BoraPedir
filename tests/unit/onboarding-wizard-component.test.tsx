@@ -112,7 +112,7 @@ describe('OnboardingWizard component', () => {
     const { default: OnboardingWizard } = await import('@/features/onboarding/components/OnboardingWizard')
     const markup = renderToStaticMarkup(React.createElement(OnboardingWizard))
 
-    expect(markup).toContain('Configure o ChefOps')
+    expect(markup).toContain('Configure o Bora Pedir')
     expect(markup).toContain('0 de 4 passos concluídos')
     expect(markup).toContain('0%')
     expect(markup).toContain('Ex: Pizzas, Bebidas, Entradas')

@@ -1,15 +1,17 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
+import { BRAND_MARK, BRAND_NAME } from '@/lib/brand'
 import { usePlan } from '@/features/plans/hooks/usePlan'
 import { hasPlanFeature, PLAN_LABELS, type PlanFeature } from '@/features/plans/types'
 import {
   LayoutDashboard, Package, ArrowLeftRight,
   UtensilsCrossed, ClipboardList, BarChart2,
-  LayoutGrid, MonitorCheck, Tag, LogOut, ChefHat,
-  CreditCard, Settings, ReceiptText, PlugZap, Users, Bike
+  LayoutGrid, MonitorCheck, Tag, LogOut,
+  CreditCard, Settings, ReceiptText, PlugZap, Users, Bike,
 } from 'lucide-react'
 
 const navItems = [
@@ -60,11 +62,9 @@ export default function Sidebar({ profile }: Props) {
       {/* Logo */}
       <div className="p-6 border-b border-slate-100">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center">
-            <ChefHat className="w-4 h-4 text-white" />
-          </div>
+          <Image src={BRAND_MARK} alt={BRAND_NAME} width={32} height={32} className="rounded-lg" />
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-semibold text-slate-900">ChefOps</p>
+            <p className="text-sm font-semibold text-slate-900">{BRAND_NAME}</p>
             <p className="text-xs text-slate-400 truncate">
               {profile?.tenants?.name ?? ''}
             </p>

@@ -1,7 +1,7 @@
 {
-  "name": "ChefOps",
-  "short_name": "ChefOps",
-  "description": "Gestão para estabelecimentos gastronômicos",
+  "name": "Bora Pedir",
+  "short_name": "Bora Pedir",
+  "description": "Pedidos, cozinha, delivery e pagamentos para o seu estabelecimento",
   "start_url": "/dashboard",
   "display": "standalone",
   "background_color": "#ffffff",

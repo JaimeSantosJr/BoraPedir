@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { BRAND_NAME } from '@/lib/brand'
 import type { SubmitHandler, UseFormReturn } from 'react-hook-form'
 
 import { Button } from '@/components/ui/button'
@@ -50,7 +51,7 @@ export function RegisterPageContent({
     <Card>
       <CardHeader>
         <CardTitle>Criar conta</CardTitle>
-        <CardDescription>Cadastre seu estabelecimento no ChefOps</CardDescription>
+        <CardDescription>Cadastre seu estabelecimento no {BRAND_NAME}</CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>

@@ -2,6 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { PLAN_FEATURES, PLAN_LABELS, PLAN_PRICES, type Plan } from '@/features/plans/types'
+import {
+  BRAND_LOGO,
+  BRAND_LOGO_DARK,
+  BRAND_MARK,
+  BRAND_NAME,
+  CONTACT_EMAIL,
+  SUPPORT_EMAIL,
+} from '@/lib/brand'
 
 const capabilities = [
   'Pedidos, mesas, comandas, cozinha, estoque e cobrança em um fluxo único.',
@@ -39,7 +47,7 @@ const faqs = [
       'Não. A ideia é começar pelo fluxo mais crítico e evoluir o restante com mais clareza, sem forçar uma virada brusca no primeiro dia.',
   },
   {
-    question: 'O ChefOps é só atendimento ou também ajuda a gestão?',
+    question: `O ${BRAND_NAME} é só atendimento ou também ajuda a gestão?`,
     answer:
       'Os dois. Ele melhora o fluxo do atendimento e, ao mesmo tempo, dá visibilidade para estoque, cobrança, vendas e gargalos do dia a dia.',
   },
@@ -54,8 +62,8 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8">
           <Link href="/" className="flex items-center">
             <Image
-              src="/brand/chefops-logo.svg"
-              alt="ChefOps"
+              src={BRAND_LOGO}
+              alt={BRAND_NAME}
               width={152}
               height={38}
               priority
@@ -86,7 +94,7 @@ export default function Home() {
               <Link href="/login">Entrar</Link>
             </Button>
             <Button asChild className="bg-[#FA680B] text-[#FBFBFB] hover:bg-[#e25f0b]">
-              <Link href="/register">Começar com o ChefOps</Link>
+              <Link href="/register">Bora pedir agora</Link>
             </Button>
           </div>
         </div>
@@ -104,7 +112,7 @@ export default function Home() {
                 crescer com controle.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#3D3D3E]/72">
-                Um sistema para restaurante que precisa operar com clareza. O ChefOps
+                Um sistema para restaurante que precisa operar com clareza. O {BRAND_NAME}
                 organiza pedidos, mesas, comandas, cozinha, estoque, cobrança e
                 integrações sem transformar a rotina em uma coleção de telas soltas.
               </p>
@@ -115,7 +123,7 @@ export default function Home() {
                   size="lg"
                   className="h-12 bg-[#3D3D3E] px-6 text-[#FBFBFB] shadow-[0_18px_40px_-24px_rgba(61,61,62,0.55)] hover:bg-[#313132]"
                 >
-                  <Link href="/register">Começar com o ChefOps</Link>
+                  <Link href="/register">Bora pedir agora</Link>
                 </Button>
                 <Button
                   asChild
@@ -158,14 +166,14 @@ export default function Home() {
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <Image
-                    src="/brand/chefops-mark.svg"
-                    alt="Marca ChefOps"
+                    src={BRAND_MARK}
+                    alt={`Marca ${BRAND_NAME}`}
                     width={42}
                     height={42}
                   />
                   <div>
                     <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#FA680B]">
-                      ChefOps
+                      {BRAND_NAME}
                     </p>
                     <p className="text-lg font-semibold text-[#FBFBFB]">
                       Operação concentrada em um só lugar
@@ -208,7 +216,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-18 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
             <div>
               <p className="text-sm font-medium uppercase tracking-[0.24em] text-[#FA680B]">
-                O que o ChefOps organiza
+                O que o {BRAND_NAME} organiza
               </p>
               <h2 className="mt-4 text-4xl font-black tracking-[-0.05em] text-[#3D3D3E]">
                 Restaurantes não perdem venda só por falta de demanda.
@@ -240,7 +248,7 @@ export default function Home() {
               Pronto para transformar operação em crescimento?
             </h2>
             <p className="mt-5 text-lg leading-8 text-[#3D3D3E]/72">
-              O ChefOps entra onde a operação costuma falhar primeiro: alinhamento entre
+              O {BRAND_NAME} entra onde a operação costuma falhar primeiro: alinhamento entre
               atendimento, cozinha, cobrança e gestão. O resultado é menos atrito interno
               e mais segurança para o restaurante crescer.
             </p>
@@ -286,7 +294,7 @@ export default function Home() {
                   Usado para organizar rotinas de atendimento, cozinha e gestão
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-[#3D3D3E]/72">
-                  O ChefOps entra para dar clareza operacional, não para criar mais uma
+                  O {BRAND_NAME} entra para dar clareza operacional, não para criar mais uma
                   camada de ruído no dia a dia.
                 </p>
               </div>
@@ -405,10 +413,10 @@ export default function Home() {
             <p className="mt-2 text-sm leading-7 text-[#3D3D3E]/72">
               Entre em contato pelo email{' '}
               <a
-                href="mailto:suporte@chefops.com.br"
+                href={`mailto:${SUPPORT_EMAIL}`}
                 className="font-medium text-[#3D3D3E] underline underline-offset-4"
               >
-                suporte@chefops.com.br
+                {SUPPORT_EMAIL}
               </a>{' '}
               e nossa equipe te ajuda a encontrar o melhor plano para o seu negócio.
             </p>
@@ -427,7 +435,7 @@ export default function Home() {
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-[#3D3D3E]/72">
                   Se você quer conhecer a plataforma no seu ritmo, pode criar a conta.
-                  Se prefere entender primeiro como o ChefOps entra na rotina do seu
+                  Se prefere entender primeiro como o {BRAND_NAME} entra na rotina do seu
                   restaurante, vale começar por uma demonstração comercial.
                 </p>
               </div>
@@ -446,7 +454,9 @@ export default function Home() {
                   variant="outline"
                   className="h-12 border-[#3D3D3E]/15 bg-transparent px-6 text-[#3D3D3E] hover:bg-[#3D3D3E]/5"
                 >
-                  <a href="mailto:contato@chefops.com.br?subject=Demonstra%C3%A7%C3%A3o%20ChefOps">
+                  <a
+                    href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Demonstração ${BRAND_NAME}`)}`}
+                  >
                     Agendar demonstração comercial
                   </a>
                 </Button>
@@ -494,13 +504,13 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-12 lg:grid-cols-[1.15fr_0.85fr_0.9fr_1fr] lg:px-8">
           <div className="max-w-sm">
             <Image
-              src="/brand/chefops-logo-dark.svg"
-              alt="ChefOps"
+              src={BRAND_LOGO_DARK}
+              alt={BRAND_NAME}
               width={152}
               height={38}
             />
             <p className="mt-4 text-sm leading-7 text-[#FBFBFB]/68">
-              ChefOps. Operação mais clara para restaurantes que querem crescer.
+              {BRAND_NAME}. Operação mais clara para restaurantes que querem crescer.
             </p>
             <p className="mt-3 text-sm leading-7 text-[#FBFBFB]/68">
               Plataforma para operação de restaurantes com pedidos, mesas, comandas,
@@ -543,8 +553,8 @@ export default function Home() {
           <div>
             <p className="text-sm font-semibold text-[#FBFBFB]">Contato comercial</p>
             <div className="mt-4 flex flex-col gap-3 text-sm text-[#FBFBFB]/72">
-              <a href="mailto:contato@chefops.com.br" className="transition-colors hover:text-[#FA680B]">
-                contato@chefops.com.br
+              <a href={`mailto:${CONTACT_EMAIL}`} className="transition-colors hover:text-[#FA680B]">
+                {CONTACT_EMAIL}
               </a>
               <span>Atendimento para implantação e demonstração</span>
               <a href="#top" className="transition-colors hover:text-[#FA680B]">

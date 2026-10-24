@@ -145,7 +145,7 @@ export default async function AdminPage() {
         <div>
           <h1 className="text-2xl font-semibold text-slate-900">Visão geral</h1>
           <p className="mt-1 text-sm text-slate-500">
-            Saúde da base, cobrança e crescimento do ChefOps.
+            Saúde da base, cobrança e crescimento do Bora Pedir.
           </p>
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-right shadow-sm">

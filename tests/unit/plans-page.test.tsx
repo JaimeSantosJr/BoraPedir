@@ -253,7 +253,7 @@ describe('plans page helpers and components', () => {
     expect(popularCardMarkup).toContain('Mais popular')
     expect(renderToStaticMarkup(freeCardTree)).toContain('Plano atual')
     expect(helpMarkup).toContain('Precisa de ajuda para escolher?')
-    expect(helpMarkup).toContain('suporte@chefops.com.br')
+    expect(helpMarkup).toContain('suporte@borapedir.com.br')
     expect(summaryWithoutSubscriptionMarkup).toContain('Seu plano atual:')
     expect(summaryWithoutSubscriptionMarkup).not.toContain('Assinatura atual:')
     expect(summaryWithoutCurrentPlanMarkup).toContain('Basic')

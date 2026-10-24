@@ -920,7 +920,7 @@ describe('heavy components smoke', () => {
 
     const markup = renderToStaticMarkup(React.createElement(OnboardingWizard))
 
-    expect(markup).toContain('Configure o ChefOps')
+    expect(markup).toContain('Configure o Bora Pedir')
     expect(markup).toContain('0 de 4 passos concluídos')
     expect(markup).toContain('Crie sua primeira categoria')
     expect(markup).toContain('Criar')

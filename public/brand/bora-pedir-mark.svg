@@ -1,0 +1,20 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bora Pedir">
+  <rect width="48" height="48" rx="14" fill="#FA680B"/>
+  <path
+    d="M16 19h16v19c0 2.21-1.79 4-4 4H20c-2.21 0-4-1.79-4-4V19z"
+    fill="#FBFBFB"
+  />
+  <path
+    d="M20 19v-2.5c0-2.49 2.01-4.5 4.5-4.5s4.5 2.01 4.5 4.5V19"
+    stroke="#FBFBFB"
+    stroke-width="2.75"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <path
+    d="M22 27h8M22 31h5"
+    stroke="#FA680B"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+</svg>

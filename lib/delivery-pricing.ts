@@ -96,7 +96,7 @@ export async function geocodeAddress(
     const response = await fetchImpl(`https://nominatim.openstreetmap.org/search?${query.toString()}`, {
       headers: {
         'Accept-Language': 'pt-BR',
-        'User-Agent': 'ChefOps Delivery Quote/1.0',
+        'User-Agent': 'Bora Pedir Delivery Quote/1.0',
       },
       cache: 'no-store',
     })

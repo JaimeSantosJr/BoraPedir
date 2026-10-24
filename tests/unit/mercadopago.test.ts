@@ -175,7 +175,7 @@ describe('mercadopago helpers', () => {
 
     await expect(
       createSaasSubscriptionLink({
-        reason: 'ChefOps Premium',
+        reason: 'Bora Pedir Premium',
         payerEmail: 'owner@test.com',
         externalReference: 'saas:tenant:1:plan:pro',
         amount: 189,
@@ -239,7 +239,7 @@ describe('mercadopago helpers', () => {
 
     await expect(
       createSaasSubscriptionLink({
-        reason: 'ChefOps Premium',
+        reason: 'Bora Pedir Premium',
         payerEmail: 'owner@test.com',
         externalReference: 'saas:tenant:1:plan:pro',
         amount: 189,
@@ -261,7 +261,7 @@ describe('mercadopago helpers', () => {
 
     await expect(
       createSaasSubscriptionLink({
-        reason: 'ChefOps Premium',
+        reason: 'Bora Pedir Premium',
         payerEmail: 'owner@test.com',
         externalReference: 'saas:tenant:1:plan:pro',
         amount: 189,
@@ -289,7 +289,7 @@ describe('mercadopago helpers', () => {
 
     await expect(
       createSaasSubscriptionLink({
-        reason: 'ChefOps Premium',
+        reason: 'Bora Pedir Premium',
         payerEmail: 'owner@test.com',
         externalReference: 'saas:tenant:1:plan:pro',
         amount: 189,

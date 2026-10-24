@@ -28,7 +28,7 @@ describe('saas billing', () => {
     expect(
       saasBilling.getTenantIdFromSaasExternalReference('saas:tenant:123e4567-e89b-12d3-a456-426614174000:plan:pro')
     ).toBe('123e4567-e89b-12d3-a456-426614174000')
-    expect(saasBilling.buildSaasSubscriptionReason('pro')).toBe('ChefOps Premium')
+    expect(saasBilling.buildSaasSubscriptionReason('pro')).toBe('Bora Pedir Premium')
     expect(saasBilling.getSaasPlanFromExternalReference(null)).toBeNull()
     expect(saasBilling.getSaasPlanFromExternalReference('saas:tenant:x:plan:enterprise')).toBeNull()
     expect(saasBilling.getTenantIdFromSaasExternalReference(null)).toBeNull()

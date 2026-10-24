@@ -2,15 +2,16 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import Providers from '@/lib/providers'
 import { Toaster } from '@/components/ui/sonner'
+import { BRAND_DESCRIPTION, BRAND_NAME } from '@/lib/brand'
 
 export const metadata: Metadata = {
-  title: 'ChefOps',
-  description: 'Gestão para estabelecimentos gastronômicos',
+  title: BRAND_NAME,
+  description: BRAND_DESCRIPTION,
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'ChefOps',
+    title: BRAND_NAME,
   },
   formatDetection: {
     telephone: false,

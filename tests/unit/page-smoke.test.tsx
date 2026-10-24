@@ -757,7 +757,7 @@ describe('page smoke', () => {
       renderToStaticMarkup(
         React.createElement(AuthLayout, null, React.createElement('div', null, 'autenticacao')),
       ),
-    ).toContain('ChefOps')
+    ).toContain('Bora Pedir')
     expect(
       renderToStaticMarkup(
         React.createElement(Providers, null, React.createElement('span', null, 'provider-child')),
@@ -771,7 +771,7 @@ describe('page smoke', () => {
 
     expect(renderToStaticMarkup(React.createElement(LoginPage))).toContain('Acesse o painel do seu estabelecimento')
     const registerMarkup = renderToStaticMarkup(React.createElement(RegisterPage))
-    expect(registerMarkup).toContain('Cadastre seu estabelecimento no ChefOps')
+    expect(registerMarkup).toContain('Cadastre seu estabelecimento no Bora Pedir')
     expect(registerMarkup).toContain('Identificador único')
   })
 

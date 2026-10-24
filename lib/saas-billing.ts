@@ -1,4 +1,5 @@
 import { PLAN_LABELS, PLAN_PRICES, type Plan } from '@/features/plans/types'
+import { BRAND_NAME } from '@/lib/brand'
 import { getPersistedTenantPlanSnapshot } from '@/lib/tenant-plan'
 import { createAdminClient } from '@/lib/supabase/admin'
 
@@ -42,7 +43,7 @@ export function getTenantIdFromSaasExternalReference(reference?: string | null) 
 }
 
 export function buildSaasSubscriptionReason(plan: BillingPlan) {
-  return `ChefOps ${PLAN_LABELS[plan]}`
+  return `${BRAND_NAME} ${PLAN_LABELS[plan]}`
 }
 
 export async function getLatestSaasBillingSubscription(tenantId: string) {

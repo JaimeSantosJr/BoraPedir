@@ -1,5 +1,6 @@
 import { AlertTriangle } from 'lucide-react'
 import Link from 'next/link'
+import { SUPPORT_EMAIL } from '@/lib/brand'
 
 export default function SuspendedPage() {
   return (
@@ -15,7 +16,7 @@ export default function SuspendedPage() {
           Sua conta foi temporariamente suspensa. Entre em contato com o suporte para regularizar sua situação.
         </p>
         <a
-          href="mailto:suporte@chefops.com.br"
+          href={`mailto:${SUPPORT_EMAIL}`}
           className="inline-flex items-center justify-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors"
         >
           Falar com suporte

@@ -137,7 +137,7 @@ export default function OnboardingWizard() {
           <ChefHat className="w-5 h-5 text-white" />
         </div>
         <div className="flex-1">
-          <h2 className="font-semibold text-slate-900">Configure o ChefOps</h2>
+          <h2 className="font-semibold text-slate-900">Configure o Bora Pedir</h2>
           <p className="text-xs text-slate-500">{completedCount} de {steps.length} passos concluídos</p>
         </div>
         <span className="text-sm font-medium text-slate-500">{Math.round(progress)}%</span>
